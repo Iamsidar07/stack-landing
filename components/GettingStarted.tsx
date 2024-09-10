@@ -28,7 +28,7 @@ const qna = [
 ];
 const GettingStarted = () => {
   return (
-    <section id="pricing" className="px-4 py-12 md:py-24 text-center w-full">
+    <section id="faq" className="px-4 py-12 md:py-24 text-center w-full">
       <GradientBorder>Getting started with Stack</GradientBorder>
       <h2 className="mt-4 sm:mt-8 text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700">
         Everything you need to know

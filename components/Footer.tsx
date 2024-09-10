@@ -1,4 +1,3 @@
-import { GithubIcon, LinkedinIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -16,14 +15,24 @@ const productLinks = [
 ];
 
 const companyLinks = [
-  { name: "About us", href: "#about" },
+  { name: "About us", href: "https://www.linkedin.com/company/stackframe-inc" },
   { name: "Blog", href: "#about" },
-  { name: "Careers", href: "#about" },
-  { name: "Contact us", href: "#about" },
+  { name: "Careers", href: "mailto:team@stack-auth.com" },
+  { name: "Contact us", href: "mailto:team@stack-auth.com" },
 ];
 const legalLinks = [
-  { name: "Terms & Conditions", href: "#about" },
-  { name: "Privacy Policy", href: "#about" },
+  {
+    name: "Terms & Conditions",
+    href: "https://www.iubenda.com/terms-and-conditions/19290387",
+  },
+  {
+    name: "Privacy Policy",
+    href: "https://www.iubenda.com/terms-and-conditions/19290387",
+  },
+  {
+    name: "Cookie Policy",
+    href: "https://www.iubenda.com/privacy-policy/19290387/cookie-policy",
+  },
 ];
 
 const FooterCol = ({ title, items }: FooterColProps) => {
@@ -33,7 +42,11 @@ const FooterCol = ({ title, items }: FooterColProps) => {
       <ul className="mt-6 text-sm flex flex-col gap-4">
         {items.map((link) => (
           <li key={link.name}>
-            <Link href={link.href} className="text-zinc-400 tracking-wide">
+            <Link
+              href={link.href}
+              target={link.href.includes("http") ? "_blank" : "_self"}
+              className="text-zinc-400 tracking-wide"
+            >
               {link.name}
             </Link>
           </li>
@@ -74,7 +87,7 @@ const Footer = () => {
             <Link
               href=""
               target="_blank"
-              className="p-1 glass-shadow rounded-full w-8 h-8"
+              className="p-1 glass-shadow rounded-lg glass-background w-8 h-8 border border-t-0 border-violet-600"
             >
               <Image
                 src="/discord.svg"
@@ -85,29 +98,29 @@ const Footer = () => {
               />
             </Link>
             <Link
-              href=""
+              href="https://www.linkedin.com/company/stackframe-inc"
               target="_blank"
-              className="p-1 glass-shadow rounded-full w-8 h-8"
+              className="p-1 glass-shadow rounded-lg glass-background w-8 h-8 border border-t-0 border-violet-600"
             >
               <Image
-                src="/discord.svg"
+                src="/linkedin.svg"
                 width={20}
                 height={20}
-                alt="Discord"
-                className="w-full h-full object-contain"
+                alt="Linkedin"
+                className="w-full h-full object-contain invert"
               />
             </Link>
             <Link
-              href=""
+              href="https://github.com/stack-auth/stack"
               target="_blank"
-              className="p-1 glass-shadow rounded-full w-8 h-8"
+              className="p-1 glass-shadow rounded-lg glass-background w-8 h-8 border border-t-0 border-violet-600"
             >
               <Image
-                src="/discord.svg"
+                src="/github.svg"
                 width={20}
                 height={20}
-                alt="Discord"
-                className="w-full h-full object-contain"
+                alt="Github"
+                className="w-full h-full object-contain invert"
               />
             </Link>
           </div>

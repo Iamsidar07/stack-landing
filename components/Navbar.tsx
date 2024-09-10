@@ -5,11 +5,11 @@ import GithubStarsButton from "./GithubStarsButton";
 import { ChevronRight } from "lucide-react";
 
 const NAVLINKS = [
-  { name: "Docs", href: "/register" },
-  { name: "Pricing", href: "/register" },
-  { name: "Blog", href: "/register" },
-  { name: "Github", href: "/register" },
-  { name: "Discord", href: "/register" },
+  { name: "Docs", href: "https://docs.stack-auth.com/overview" },
+  { name: "Pricing", href: "/pricing" },
+  { name: "Blog", href: "/blog" },
+  { name: "Github", href: "https://github.com/stack-auth/stack" },
+  { name: "Discord", href: "https://discord.com/invite/pD4nyYyKrb" },
 ];
 const Navbar = () => {
   return (
@@ -24,11 +24,12 @@ const Navbar = () => {
             className="w-full h-full object-contain"
           />
         </Link>
-        <div className="flex items-center gap-6">
+        <div className="items-center gap-6 hidden md:flex">
           {NAVLINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
+              target={link.href.includes("http") ? "_blank" : "_self"}
               className="text-white/60 font-semibold text-sm hover:text-white transition-opacity capitalize"
             >
               {link.name}
@@ -36,15 +37,17 @@ const Navbar = () => {
           ))}
         </div>
         <div className="flex items-center gap-4">
-          <GithubStarsButton />
+          <span className="hidden sm:inline-flex">
+            <GithubStarsButton />
+          </span>
           <Link
-            href={""}
+            href={"https://app.stack-auth.com/"}
             className="text-white/60 font-semibold text-sm hover:text-white transition-opacity capitalize"
           >
             Sign in
           </Link>
           <Link
-            href={""}
+            href={"https://app.stack-auth.com/handler/signup"}
             className="flex items-center gap-1 group bg-white text-black px-6 py-2 rounded-full glass-shadow"
           >
             Sign up{" "}
