@@ -58,7 +58,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-4 mt-8 w-fit mx-auto">
+        <div className="flex items-center gap-4 mt-8 w-fit mx-auto z-10">
           <div className="relative w-fit mx-auto px-6 py-2 rounded-2xl">
             <Link
               href={"https://www.ycombinator.com/companies/stack-auth"}
