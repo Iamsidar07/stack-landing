@@ -17,13 +17,13 @@ const GithubStarsButton = async () => {
       className="relative mr-4"
     >
       <Image
-        width={18}
-        height={18}
+        width={20}
+        height={20}
         alt="github"
         src="/github.svg"
         className="object-contain invert"
       />
-      <span className="absolute -top-1/2 -right-full text-xs bg-clip-text text-transparent bg-gradient-to-b from-zinc-300 to-violet-700">
+      <span className="absolute -top-[80%] -right-full text-xs bg-clip-text text-transparent bg-gradient-to-b from-zinc-200 to-yellow-700">
         {stars}
       </span>
     </Link>

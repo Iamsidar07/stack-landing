@@ -4,9 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Inter } from "next/font/google";
 
-
 const inter = Inter({ subsets: ["latin"] });
-
 
 export const metadata: Metadata = {
   title: "Stack Auth",
@@ -35,10 +33,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased bg-black selection:bg-zinc-800/70 selection:text-white overflow-x-hidden`}
+        className={`${inter.className} antialiased bg-black selection:bg-zinc-800/70 selection:text-white relative`}
       >
         <Navbar />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

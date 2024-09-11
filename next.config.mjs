@@ -1,3 +1,4 @@
+import { withContentlayer } from "next-contentlayer";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -10,4 +11,5 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+// Merge MDX config with Next.js config
+export default withContentlayer(nextConfig);
