@@ -3,15 +3,14 @@ import { Timeline } from "@/components/ui/timeline";
 import Image from "next/image";
 import Link from "next/link";
 
-const options = {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-};
 export default function BlogsPage() {
   console.log(allPosts);
   const data = allPosts.map((post) => ({
-    title: new Date(post.published).toLocaleDateString("en-US", options),
+    title: new Date(post.published).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    }),
     content: (
       <div className="card rounded-3xl glass-shadow">
         <div className="card-content">
