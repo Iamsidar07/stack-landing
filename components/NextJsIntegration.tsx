@@ -1,4 +1,3 @@
-import { BrainCircuit, LayoutDashboard, Settings, User } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 

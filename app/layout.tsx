@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Inter, Sora } from "next/font/google";
+import { Sora } from "next/font/google";
 
-const inter = Sora({
+const sora = Sora({
   subsets: ["latin"],
   weight: ["400", "300", "500", "600", "700", "800"],
 });
@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased bg-black selection:bg-zinc-800/70 selection:text-zinc-100 relative overflow-x-hidden`}
+        className={`${sora.className} antialiased bg-black selection:bg-zinc-800/70 selection:text-zinc-100 relative overflow-x-hidden`}
       >
         <Navbar />
         <main>{children}</main>
