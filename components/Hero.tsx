@@ -24,7 +24,7 @@ const Hero = () => {
         >
           <div className="flex items-center justify-center gap-2">
             Backed by{" "}
-            <span className="w-7 h-7 grid place-items-center bg-zinc-700 text-white rounded-md font-semibold glass-shadow">
+            <span className="w-7 h-7 grid place-items-center bg-zinc-700 text-zinc-100 rounded-md font-semibold glass-shadow">
               Y
             </span>
             Combinator

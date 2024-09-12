@@ -31,7 +31,7 @@ const Navbar = () => {
               key={link.href}
               href={link.href}
               target={link.href.includes("http") ? "_blank" : "_self"}
-              className="text-white/60 font-semibold text-sm hover:text-white transition-opacity capitalize"
+              className="text-white/60 font-semibold text-sm hover:text-zinc-100 transition-opacity capitalize"
             >
               {link.name}
             </Link>
@@ -43,13 +43,13 @@ const Navbar = () => {
           </span>
           <Link
             href={"https://app.stack-auth.com/"}
-            className="text-white/60 font-semibold text-sm hover:text-white transition-opacity capitalize"
+            className="text-white/60 font-semibold text-sm hover:text-zinc-100 transition-opacity capitalize"
           >
             Sign in
           </Link>
           <Link
             href={"https://app.stack-auth.com/handler/signup"}
-            className="flex items-center gap-1 group bg-white text-black px-4 py-2 rounded-full glass-shadow"
+            className="flex items-center gap-1 group bg-zinc-100 text-black px-4 py-2 rounded-full glass-shadow"
           >
             Sign up{" "}
             <ChevronRight className="w-4 h-4 text-zinc-800 group-hover:translate-x-1 transition-transform" />

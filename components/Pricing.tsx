@@ -58,7 +58,7 @@ const Pricing = () => {
           <Link
             href={"https://docs.stack-auth.com/getting-started/setup"}
             target="_blank"
-            className="inline-flex items-center mt-4 gap-1 w-full bg-white text-zinc-600 hover:text-violet-500 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90 font-semibold"
+            className="inline-flex items-center mt-4 gap-1 w-full bg-zinc-100 text-zinc-600 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90"
           >
             Get Started{" "}
             <ArrowRight className="w-4 h-4 flex items-center justify-center" />
@@ -99,7 +99,7 @@ const Pricing = () => {
           <Link
             href={"https://docs.stack-auth.com/getting-started/setup"}
             target="_blank"
-            className="inline-flex items-center mt-4 gap-1 w-full bg-white text-zinc-600 hover:text-violet-500 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90 font-semibold"
+            className="inline-flex items-center mt-4 gap-1 w-full bg-violet-700 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90 font-medium"
           >
             Get Started{" "}
             <ArrowRight className="w-4 h-4 flex items-center justify-center" />
@@ -141,7 +141,7 @@ const Pricing = () => {
           <Link
             href={"https://docs.stack-auth.com/getting-started/setup"}
             target="_blank"
-            className="inline-flex items-center mt-4 gap-1 w-full bg-white text-zinc-600 hover:text-violet-500 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90 font-semibold"
+            className="inline-flex items-center mt-4 gap-1 w-full bg-zinc-100 text-zinc-600 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90"
           >
             Get Started{" "}
             <ArrowRight className="w-4 h-4 flex items-center justify-center" />
