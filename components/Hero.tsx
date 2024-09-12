@@ -61,7 +61,7 @@ const Hero = () => {
         <div className="flex items-center gap-4 mt-8 w-fit mx-auto z-10">
           <div className="relative w-fit mx-auto px-6 py-2 rounded-2xl">
             <Link
-              href={"https://www.ycombinator.com/companies/stack-auth"}
+              href={"https://docs.stack-auth.com/getting-started/setup"}
               target="_blank"
               className="inline-flex gap-1"
             >
@@ -70,10 +70,7 @@ const Hero = () => {
               <div className="absolute inset-px bg-zinc-900/80 rounded-lg z-[-1] backdrop-blur" />
             </Link>
           </div>
-          <Link
-            href={"https://www.ycombinator.com/companies/stack-auth"}
-            target="_blank"
-          >
+          <Link href={"https://discord.stack-auth.com/"} target="_blank">
             <div className="flex items-center gap-1 relative w-fit mx-auto px-6 py-2 rounded-full glass-shadow backdrop-blur ">
               <Image
                 src="/discord.svg"
@@ -87,7 +84,7 @@ const Hero = () => {
           </Link>
         </div>
         <Link
-          href={"https://www.ycombinator.com/companies/stack-auth"}
+          href={"https://docs.stack-auth.com/"}
           target="_blank"
           className="inline-flex items-center mt-4 gap-1 text-zinc-300 px-6 py-3 hover:bg-zinc-900 rounded-full group z-10"
         >

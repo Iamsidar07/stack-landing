@@ -1,47 +1,62 @@
-import { cn } from "@/lib/utils";
-import {
-  AppWindow,
-  BrainCircuit,
-  LayoutDashboard,
-  Settings,
-  User,
-} from "lucide-react";
+import { BrainCircuit, LayoutDashboard, Settings, User } from "lucide-react";
+import Image from "next/image";
 import React from "react";
+
+const GridItem = ({
+  image,
+  title,
+  description,
+}: {
+  image: string;
+  title: string;
+  description: string;
+}) => (
+  <div className="border border-zinc-900 bg-zinc-950 glass-shadow rounded-xl col-span-full md:col-span-6 px-6 py-8 overflow-hidden group">
+    <div>
+      <header>
+        <h2 className="font-semibold">{title}</h2>
+        <p className="opacity-60 mt-2">{description}</p>
+      </header>
+    </div>
+    <div className="w-[calc(100%+64px)] flex items-end justify-center -m-8 mt-auto">
+      {/*image*/}
+      <picture className="flex items-start justify-start w-auto max-w-[calc(100%_+_2*24px)] max-h-[calc(100%_+_2*32px)] m-auto relative z-[1] flex-grow">
+        <Image
+          src={image}
+          alt="Sch"
+          width={1000}
+          height={720}
+          className="text-transparent cover object-left-top w-full max-w-full h-auto block group-hover:-translate-y-[2px] transition-transform"
+        />
+      </picture>
+    </div>
+  </div>
+);
+
 const items = [
   {
-    icon: BrainCircuit,
     title: "<SignIn />",
     description:
       "Effortlessly integrate user authentication with our intuitive SignIn component. Enable quick and secure account access with minimal setup.",
-    image: "/sign-in.webp",
+    image: "/sign-in.png",
   },
   {
-    icon: AppWindow,
-    title: "Admin Dashboard",
-    description:
-      "Streamline administrative tasks with our Admin Dashboard. Monitor user activity, manage accounts, and configure settings from a centralized interface.",
-    image: "/dashboard.webp",
-  },
-  {
-    icon: LayoutDashboard,
     title: "Email Templates",
     description:
       "Customize and automate your communications with pre-built Email Templates. Send professional welcome messages, password resets, and notifications effortlessly.",
-    image: "/email.webp",
+    image: "/email.png",
   },
   {
-    icon: Settings,
     title: "<AccountSettings />",
     description:
       "Provide users with comprehensive account management. Allow them to update personal details and adjust security preferences in one convenient place.",
-    image: "/account-settings-new.webp",
+    image: "/account-settings.png",
   },
   {
-    icon: User,
     title: "<UserButton />",
     description:
       "Enhance user experience with the UserButton. Let users easily manage their profiles and access account settings with a single click.",
-    image: "/user-button.webp",
+    image: "/user-button.png",
   },
 ];
 
@@ -66,30 +81,32 @@ const NextJsIntegration = () => {
         users will love it, and your developers too.
       </p>
 
-      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-2 mt-10 md:mt-20 relative">
-        {items.map(({ icon: Icon, title, description }, idx) => (
-          <div
-            key={idx}
-            className={cn(
-              "glass-background glass-shadow border border-t-0 border-zinc-800  rounded-2xl hover:brightness-110 backdrop-blur p-4 card",
-              {
-                "md:col-span-2": idx === 1 || idx === 3 || idx === 4,
-              }
-            )}
-          >
-            <div className="card-content ">
-              <Icon
-                strokeWidth={0.05}
-                opacity={0.4}
-                strokeOpacity={0.8}
-                color="#71717a"
-                className="w-full h-64"
-              />
-              <h2 className="text-lg">{title}</h2>
-              <p className="text-zinc-400 text-sm">{description}</p>
-              {/* Put image as svg when available */}
-            </div>
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 mt-10 md:mt-20 relative px-4 md:px-0">
+        <div className="glass-shadow border border-zinc-900 bg-zinc-950 rounded-xl md:col-span-12 px-6 py-8 overflow-hidden group">
+          <div>
+            <header>
+              <h2 className="font-semibold">Next.js Integration</h2>
+              <p className="opacity-60 mt-2">
+                Easily integrate your Next.js application with our components
+                and features.
+              </p>
+            </header>
           </div>
+          <div className="w-[calc(100%+64px)] flex items-end justify-center -m-8 mt-auto">
+            {/*image*/}
+            <picture className="flex items-start justify-start w-auto max-w-[calc(100%_+_2*24px)] max-h-[calc(100%_+_2*32px)] m-auto relative z-[1] flex-grow">
+              <Image
+                src="/dashboard.png"
+                alt="Sch"
+                width={2048}
+                height={1016}
+                className="text-transparent cover object-left-top w-full max-w-full h-auto block group-hover:-translate-y-[2px] transition-transform"
+              />
+            </picture>
+          </div>
+        </div>
+        {items.map((item, index) => (
+          <GridItem key={index} {...item} />
         ))}
       </div>
     </section>

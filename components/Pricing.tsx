@@ -56,7 +56,7 @@ const Pricing = () => {
           </div>
 
           <Link
-            href={"https://www.ycombinator.com/companies/stack-auth"}
+            href={"https://docs.stack-auth.com/getting-started/setup"}
             target="_blank"
             className="inline-flex items-center mt-4 gap-1 w-full bg-white text-zinc-600 hover:text-violet-500 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90 font-semibold"
           >
@@ -97,7 +97,7 @@ const Pricing = () => {
             ))}
           </div>
           <Link
-            href={"https://www.ycombinator.com/companies/stack-auth"}
+            href={"https://docs.stack-auth.com/getting-started/setup"}
             target="_blank"
             className="inline-flex items-center mt-4 gap-1 w-full bg-white text-zinc-600 hover:text-violet-500 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90 font-semibold"
           >
@@ -139,7 +139,7 @@ const Pricing = () => {
             ))}
           </div>
           <Link
-            href={"https://www.ycombinator.com/companies/stack-auth"}
+            href={"https://docs.stack-auth.com/getting-started/setup"}
             target="_blank"
             className="inline-flex items-center mt-4 gap-1 w-full bg-white text-zinc-600 hover:text-violet-500 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90 font-semibold"
           >

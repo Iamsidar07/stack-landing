@@ -3,8 +3,9 @@ import Link from "next/link";
 import React from "react";
 import GithubStarsButton from "./GithubStarsButton";
 import { ChevronRight } from "lucide-react";
+import MobileNavigation from "./MobileNavigation";
 
-const NAVLINKS = [
+export const NAVLINKS = [
   { name: "Docs", href: "https://docs.stack-auth.com/overview" },
   { name: "Pricing", href: "#pricing" },
   { name: "Blog", href: "/blog" },
@@ -13,8 +14,8 @@ const NAVLINKS = [
 ];
 const Navbar = () => {
   return (
-    <div className="fixed top-0 z-[999] flex w-full justify-center px-4 py-3 -translate-x-1/2 left-1/2">
-      <nav className="h-[76px] w-full rounded-2xl max-w-7xl mx-auto border-[1px] border-zinc-800 flex items-center justify-between px-6 py-4 inset-1 backdrop-blur glass-background">
+    <div className="fixed top-0 z-[999] flex w-full justify-center px-4 pt-2 -translate-x-1/2 left-1/2">
+      <nav className="w-full rounded-2xl max-w-7xl mx-auto border-[1px] border-zinc-800 flex items-center justify-between px-6 py-3 inset-1 backdrop-blur glass-background relative">
         <Link href="/" className="h-5">
           <Image
             src="/logo.svg"
@@ -48,11 +49,14 @@ const Navbar = () => {
           </Link>
           <Link
             href={"https://app.stack-auth.com/handler/signup"}
-            className="flex items-center gap-1 group bg-white text-black px-6 py-2 rounded-full glass-shadow"
+            className="flex items-center gap-1 group bg-white text-black px-4 py-2 rounded-full glass-shadow"
           >
             Sign up{" "}
             <ChevronRight className="w-4 h-4 text-zinc-800 group-hover:translate-x-1 transition-transform" />
           </Link>
+
+          {/*Mobile navigation*/}
+          <MobileNavigation />
         </div>
       </nav>
     </div>

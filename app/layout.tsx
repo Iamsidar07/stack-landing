@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Inter } from "next/font/google";
+import { Inter, Sora } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Sora({
+  subsets: ["latin"],
+  weight: ["400", "300", "500", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Stack Auth",
@@ -33,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased bg-black selection:bg-zinc-800/70 selection:text-white relative`}
+        className={`${inter.className} antialiased bg-black selection:bg-zinc-800/70 selection:text-white relative overflow-x-hidden`}
       >
         <Navbar />
         <main>{children}</main>
