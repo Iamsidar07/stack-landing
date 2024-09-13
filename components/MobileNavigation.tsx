@@ -8,7 +8,7 @@ const MobileNavigation = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <div className="md:hidden">
+    <div className="block sm:hidden">
       {isOpen ? (
         <X onClick={() => setIsOpen(false)} className="w-5 h-5" />
       ) : (
@@ -18,7 +18,7 @@ const MobileNavigation = () => {
       {isOpen && (
         <div
           className={
-            "absolute h-44 top-[80px] left-0 right-0 w-full border border-zinc-900 rounded-lg bg-zinc-950/80 backdrop-blur flex flex-col gap-2 p-4"
+            "absolute top-[80px] left-0 right-0 w-full border border-zinc-900 rounded-lg bg-zinc-950/80 backdrop-blur flex flex-col gap-2 p-4 pb-6"
           }
         >
           {NAVLINKS.map((link) => (

@@ -6,7 +6,7 @@ import CopyToClipboard from "./CopyToClipboard";
 
 const Hero = () => {
   return (
-    <div className="h-screen w-full relative pt-32">
+    <div className="h-screen w-full relative pt-32 px-4">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
