@@ -10,13 +10,13 @@ interface FooterColProps {
 const productLinks = [
   { name: "Home", href: "/" },
   { name: "Features", href: "#features" },
-  { name: "Pricing & Plans", href: "#pricing" },
+  { name: "Pricing & Plans", href: "/pricing" },
   { name: "FAQS", href: "#faq" },
 ];
 
 const companyLinks = [
   { name: "About us", href: "https://www.linkedin.com/company/stackframe-inc" },
-  { name: "Blog", href: "#about" },
+  { name: "Blog", href: "/blog" },
   { name: "Careers", href: "mailto:team@stack-auth.com" },
   { name: "Contact us", href: "mailto:team@stack-auth.com" },
 ];
