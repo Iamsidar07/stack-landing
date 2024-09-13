@@ -2,21 +2,28 @@ import { ArrowRight, CircleCheck } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-const Pricing = () => {
+const Pricing = ({
+  withTopGradientBorder = true,
+}: {
+  withTopGradientBorder?: boolean;
+}) => {
   return (
     <section
       id="pricing"
       className="px-4 py-12 md:py-24 text-center w-full relative"
     >
-      <div
-        aria-hidden="true"
-        className="line-bg left-1/2 top-0 w-[40%] center pointer-events-none absolute h-px max-w-full -translate-x-1/2 -translate-y-1/2"
-      ></div>
-      <div
-        aria-hidden="true"
-        className="-top-1 left-1/2 h-[100px] w-[70%] md:h-[300px] center pointer-events-none absolute max-w-full -translate-x-1/2 -translate-y-1/2 conic-bg"
-      ></div>
-
+      {withTopGradientBorder && (
+        <>
+          <div
+            aria-hidden="true"
+            className="line-bg left-1/2 top-0 w-[40%] center pointer-events-none absolute h-px max-w-full -translate-x-1/2 -translate-y-1/2"
+          ></div>
+          <div
+            aria-hidden="true"
+            className="-top-1 left-1/2 h-[100px] w-[70%] md:h-[300px] center pointer-events-none absolute max-w-full -translate-x-1/2 -translate-y-1/2 conic-bg"
+          ></div>
+        </>
+      )}
       <span className="px-6 py-2 rounded-full text-sm text-zinc-500 glass-shadow">
         Managed hosting
       </span>
@@ -58,10 +65,10 @@ const Pricing = () => {
           <Link
             href={"https://docs.stack-auth.com/getting-started/setup"}
             target="_blank"
-            className="inline-flex items-center mt-4 gap-1 w-full bg-zinc-100 text-zinc-600 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90"
+            className="inline-flex items-center mt-4 gap-1 w-full bg-zinc-100 text-zinc-600 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90 group"
           >
             Get Started{" "}
-            <ArrowRight className="w-4 h-4 flex items-center justify-center" />
+            <ArrowRight className="w-4 h-4 flex items-center justify-center group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
         <div className="p-4 sm:p-8 rounded-2xl text-left flex flex-col h-full md:scale-105 z-[2] bg-gradient-to-br from-zinc-900 to-zinc-950 team-shadow border border-zinc-800">
@@ -99,10 +106,10 @@ const Pricing = () => {
           <Link
             href={"https://docs.stack-auth.com/getting-started/setup"}
             target="_blank"
-            className="inline-flex items-center mt-4 gap-1 w-full bg-violet-700 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90 font-medium"
+            className="inline-flex items-center mt-4 gap-1 w-full bg-violet-700 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90 font-medium group"
           >
             Get Started{" "}
-            <ArrowRight className="w-4 h-4 flex items-center justify-center" />
+            <ArrowRight className="w-4 h-4 flex items-center justify-center group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
         <div className="glass-shadow border border-zinc-900 p-4 sm:p-8 rounded-2xl text-left flex flex-col h-full">
@@ -141,10 +148,10 @@ const Pricing = () => {
           <Link
             href={"https://docs.stack-auth.com/getting-started/setup"}
             target="_blank"
-            className="inline-flex items-center mt-4 gap-1 w-full bg-zinc-100 text-zinc-600 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90"
+            className="inline-flex items-center mt-4 gap-1 w-full bg-zinc-100 text-zinc-600 justify-center px-6 py-3 rounded-xl shadow-lg hover:opacity-90 group"
           >
             Get Started{" "}
-            <ArrowRight className="w-4 h-4 flex items-center justify-center" />
+            <ArrowRight className="w-4 h-4 flex items-center justify-center group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
       </div>

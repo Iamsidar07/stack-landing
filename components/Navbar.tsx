@@ -7,8 +7,9 @@ import MobileNavigation from "./MobileNavigation";
 
 export const NAVLINKS = [
   { name: "Docs", href: "https://docs.stack-auth.com/overview" },
-  { name: "Pricing", href: "#pricing" },
+  { name: "Pricing", href: "/pricing" },
   { name: "Blog", href: "/blog" },
+  { name: "Changelog", href: "/changelog" },
   { name: "Github", href: "https://github.com/stack-auth/stack" },
   { name: "Discord", href: "https://discord.com/invite/pD4nyYyKrb" },
 ];

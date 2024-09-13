@@ -10,7 +10,7 @@ const GridItem = ({
   title: string;
   description: string;
 }) => (
-  <div className="border border-zinc-900 bg-zinc-950 glass-shadow rounded-xl col-span-full md:col-span-6 px-6 py-8 overflow-hidden group">
+  <div className="border border-zinc-900 bg-zinc-950 glass-shadow rounded-xl col-span-full md:col-span-6 px-6 py-8 overflow-hidden group flex flex-col">
     <div>
       <header>
         <h2 className="font-semibold">{title}</h2>

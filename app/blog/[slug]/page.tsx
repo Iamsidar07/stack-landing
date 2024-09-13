@@ -1,7 +1,22 @@
 import { allPosts } from "@/.contentlayer/generated";
 import { Mdx } from "@/mdx-components";
+import { ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import { useMemo } from "react";
+
+export async function generateMetadata({params}: {params: {slug: string}}, parent: ResolvingMetadata) {
+  const post = allPosts.find((post) => post.slug === "/" + params.slug);
+  const previousImages = (await parent).openGraph?.images || [];
+
+  return {
+    title: post?.title,
+    description: post?.description,
+    openGraph: {
+      images: [post?.image, ...previousImages],
+    }
+  };
+}
+
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = useMemo(
     () => allPosts.find((post) => post.slug === "/" + params.slug),

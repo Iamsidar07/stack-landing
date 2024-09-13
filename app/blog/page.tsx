@@ -1,7 +1,12 @@
 import { allPosts } from "@/.contentlayer/generated";
 import { Timeline } from "@/components/ui/timeline";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Stack Auth | Blogs",
+};
 
 export default function BlogsPage() {
   console.log(allPosts);

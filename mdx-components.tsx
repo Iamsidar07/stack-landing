@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 import { Callout } from "@/components/callout";
 import { MdxCard } from "@/components/mdx-card";
 import { MDXComponents } from "mdx/types";
-import CopyToClipboard from "./components/CopyToClipboard";
 
 const components: MDXComponents = {
   h1: ({ className, ...props }) => (
@@ -180,6 +179,7 @@ interface MdxProps {
 }
 
 export function Mdx({ code }: MdxProps) {
+  console.log("got the code", code.slice(0, 10));
   const Component = useMDXComponent(code);
 
   return (
