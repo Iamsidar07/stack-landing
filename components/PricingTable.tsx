@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, CheckCircle, X } from "lucide-react";
+import { ArrowRight, CircleCheck, X } from "lucide-react";
 import Link from "next/link";
 
 const PricingTable = () => {
@@ -86,7 +86,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-600 w-4 h-4" />
+          <CircleCheck className="text-violet-600 w-4 h-4" />
           <span>
             10K <span className="md:hidden">Monthly active users</span>
           </span>
@@ -94,7 +94,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             50K <span className="md:hidden">Monthly active users</span>
           </span>
@@ -102,7 +102,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             Unlimited <span className="md:hidden">Monthly active users</span>
           </span>
@@ -115,7 +115,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             Unlimited <span className="md:hidden">Monthly active teams</span>
           </span>
@@ -123,7 +123,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             Unlimited <span className="md:hidden">Monthly active teams</span>
           </span>
@@ -131,7 +131,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             Unlimited <span className="md:hidden">Monthly active teams</span>
           </span>
@@ -144,7 +144,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             Unlimited <span className="md:hidden">Number of projects</span>
           </span>
@@ -152,7 +152,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             Unlimited <span className="md:hidden">Number of projects</span>
           </span>
@@ -160,7 +160,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             Unlimited <span className="md:hidden">Number of projects</span>
           </span>
@@ -173,7 +173,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             1 <span className="md:hidden"># of dashboard admins</span>
           </span>
@@ -181,7 +181,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             3 (then $39 each){" "}
             <span className="md:hidden"># of dashboard admins</span>
@@ -190,7 +190,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             5 (then $49 each){" "}
             <span className="md:hidden"># of dashboard admins</span>
@@ -226,7 +226,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             {" "}
             <span className="md:hidden">Custom SSO branding</span>
@@ -235,7 +235,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             {" "}
             <span className="md:hidden">Custom SSO branding</span>
@@ -244,7 +244,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             {" "}
             <span className="md:hidden">Custom SSO branding</span>
@@ -258,7 +258,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             {" "}
             <span className="md:hidden">SSO with OIDC/OAuth</span>
@@ -267,7 +267,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             {" "}
             <span className="md:hidden">SSO with OIDC/OAuth</span>
@@ -276,7 +276,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             {" "}
             <span className="md:hidden">SSO with OIDC/OAuth</span>
@@ -308,7 +308,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             {" "}
             <span className="md:hidden">SSO with SAML</span>
@@ -344,7 +344,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             {" "}
             <span className="md:hidden">Basic support</span>
@@ -353,7 +353,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             {" "}
             <span className="md:hidden">Basic support</span>
@@ -362,7 +362,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             {" "}
             <span className="md:hidden">Basic support</span>
@@ -385,7 +385,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             {" "}
             <span className="md:hidden">Priority support</span>
@@ -394,7 +394,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             {" "}
             <span className="md:hidden">Priority support</span>
@@ -426,7 +426,7 @@ const PricingTable = () => {
       </div>
       <div className="px-6 flex flex-col justify-end">
         <div className="flex items-center h-full border-b border-zinc-900 py-2 text-zinc-500  gap-1">
-          <CheckCircle className="text-violet-700 w-4 h-4" />
+          <CircleCheck className="text-violet-700 w-4 h-4" />
           <span>
             {" "}
             <span className="md:hidden">Premium support</span>
