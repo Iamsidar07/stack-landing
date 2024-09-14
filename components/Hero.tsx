@@ -43,7 +43,7 @@ const Hero = () => {
           <span className="text-sm font-bold text-gray-500">
             Next.js setup wizard:
           </span>
-          <div className="mt-4 bg-zinc-900/40 px-8 py-6 w-fit rounded-md mx-auto relative border border-zinc-800 backdrop-blur">
+          <div className="mt-4 bg-zinc-900/40 px-0 pl-2 sm:px-8 py-6 w-fit rounded-md mx-auto relative border border-zinc-800 backdrop-blur">
             <div className="w-24 h-24 bg-violet-500 rounded-lg absolute z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 filter blur-[76px] animate-pulse" />
             <div className="pt-6 flex gap-2 items-center">
               <span className="font-mono ">

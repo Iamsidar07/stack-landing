@@ -14,7 +14,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="text-center px-4 py-12 md:py-24">
+    <section id="testimonials" className="text-center px-4 py-12 md:py-24 w-full">
       <h2 className="text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700">
         Join the community
       </h2>
@@ -22,7 +22,7 @@ const Testimonials = () => {
         As an open-source project, we rely on organic growth. <br /> Here&apos;s
         what our users have to say.
       </p>
-      <div className="h-[30rem] rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <div className="w-full h-[30rem] rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards
           items={testimonials}
           direction="left"
