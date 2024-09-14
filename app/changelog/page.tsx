@@ -27,7 +27,7 @@ export default async function Changelog() {
           Stack Changelog
         </h1>
         <p className="opacity-60 mt-2 text-lg">
-          New updates and improvements to Linear.
+          New updates and improvements to Stack Auth.
         </p>
       </div>
       <div className="border-b border-zinc-800 mt-12" />
