@@ -51,7 +51,7 @@ const Navbar = () => {
           </Link>
           <Link
             href={"https://app.stack-auth.com/handler/signup"}
-            className="flex items-center gap-1 group bg-zinc-100 text-black px-4 py-2 rounded-full glass-shadow"
+            className="text-sm flex items-center gap-1 group bg-zinc-100 text-black px-4 py-2 rounded-full glass-shadow"
           >
             Sign up{" "}
             <ChevronRight className="w-4 h-4 text-zinc-800 group-hover:translate-x-1 transition-transform" />

@@ -43,7 +43,7 @@ export default function BlogsPage() {
         We prepared some interesting articles for you. Stay tuned for more
         updates!
       </p>
-      <div className="border-b border-zinc-800 mt-12" />
+      <div className="border-b border-zinc-800 mt-12 max-w-5xl mx-auto" />
       <Timeline data={data} />
     </section>
   );

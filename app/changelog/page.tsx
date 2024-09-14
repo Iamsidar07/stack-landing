@@ -1,12 +1,14 @@
-import { marked } from "marked";
 import { Metadata } from "next";
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeHighlight from "rehype-highlight";
 
 async function fetchChangelog() {
   try {
     const res = await fetch(
       "https://raw.githubusercontent.com/commercialhaskell/stack/master/ChangeLog.md"
     );
-    return marked(await res.text());
+    return await res.text();
   } catch (e) {
     console.log("Got error", e);
     throw e;
@@ -32,10 +34,14 @@ export default async function Changelog() {
       </div>
       <div className="border-b border-zinc-800 mt-12" />
       {content && (
-        <div
-          dangerouslySetInnerHTML={{ __html: content }}
-          className="prose text-zinc-100 prose-headings:text-zinc-300 prose-p:text-zinc-100 prose-strong:text-zinc-400 prose-headings:font-medium prose-code:bg-zinc-700/40 prose-code:px-3 prose-code:py-1.5 prose-code:text-zinc-300 prose-a:text-violet-500 pt-12 px-4 md:px-0 mx-auto w-full max-w-4xl"
-        />
+        <div className="prose text-zinc-100 prose-headings:text-zinc-300 prose-p:text-zinc-100 prose-strong:text-zinc-400 prose-headings:font-medium prose-code:bg-zinc-700/40 prose-code:px-3 prose-code:py-1 prose-code:text-zinc-300 prose-a:text-violet-500 pt-12 px-4 md:px-0 mx-auto w-full max-w-4xl">
+          <Markdown
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeHighlight]}
+          >
+            {content}
+          </Markdown>
+        </div>
       )}
     </section>
   );
