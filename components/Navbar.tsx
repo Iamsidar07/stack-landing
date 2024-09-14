@@ -18,13 +18,13 @@ const Navbar = () => {
 
     <div className="sticky top-0 z-[999] flex w-full justify-center px-4 pt-2 ">
       <nav className="w-full rounded-2xl max-w-7xl mx-auto border-[1px] border-zinc-800 flex items-center justify-between px-6 py-3 inset-1 backdrop-blur glass-background relative">
-        <Link href="/" className="h-5">
+        <Link href="/" >
           <Image
             src="/logo.svg"
             alt="Stack Auth"
-            width={40}
-            height={40}
-            className="w-full h-full object-contain"
+            width={100}
+            height={20}
+            className="object-contain"
           />
         </Link>
         <div className="items-center gap-6 hidden md:flex">

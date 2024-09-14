@@ -14,7 +14,10 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="text-center px-4 py-12 md:py-24 w-full">
+    <section
+      id="testimonials"
+      className="text-center px-4 py-12 md:py-24 w-full"
+    >
       <h2 className="text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700">
         Join the community
       </h2>
@@ -26,7 +29,7 @@ const Testimonials = () => {
         <InfiniteMovingCards
           items={testimonials}
           direction="left"
-          speed="slow"
+          speed="fast"
         />
       </div>
     </section>
