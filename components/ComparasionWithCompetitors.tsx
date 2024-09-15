@@ -132,7 +132,7 @@ const ComparasionCard = ({
   link,
 }: ProductProps) => {
   return (
-    <div className="p-4 md:p-8 border-b border-zinc-700 rounded-3xl glass-shadow leading-loose mt-12 glass-background glass-shadow relative">
+    <div className="p-4 md:p-8 border-b border-zinc-700 rounded-xl glass-shadow leading-loose glass-shadow relative bg-zinc-900/80">
       <div
         aria-hidden="true"
         className="line-bg right-0 top-0 w-[20%] center pointer-events-none absolute h-px max-w-full -translate-x-1/2 -translate-y-1/2"
@@ -153,7 +153,7 @@ text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b fro
       <Link
         href={link}
         target="_blank"
-        className="ml-auto flex items-center gap-2 mt-8 justify-end group"
+        className="ml-auto flex items-center gap-2 mt-8 justify-end group w-fit"
       >
         Learn more{" "}
         <ArrowRight className="w-4 h-4 text-violet-600 group-hover:translate-x-1 transition-transform" />
@@ -165,7 +165,8 @@ text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b fro
 const ComparasionWithCompetitors = () => {
   const [currentTab, setCurrentTab] = useState(0);
   return (
-    <section className="px-6 md:px-0 py-12 md:py-24 w-full bg-black relative">
+    <section className="px-6 md:px-0 py-12 md:py-24 w-full bg-black relative bg-dot-white/[0.2]">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <h2 className="text-center text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700">
         Here&apos;s how we compare
       </h2>
@@ -175,35 +176,34 @@ const ComparasionWithCompetitors = () => {
         <br />
         developer-friendly, and feature-rich.
       </p>
-      <div className="mt-10 md:mt-20 max-w-4xl mx-auto">
-        <div className="flex items-center gap-6 flex-wrap">
+      <div className="mt-10 md:mt-20 max-w-4xl mx-auto gap-8 min-h-[45vh] grid grid-cols-1 md:grid-cols-3">
+        <div className="flex flex-col gap-1 md:col-span-1 z-[1]">
           {products.map((item, index) => (
             <div
-              className="flex flex-col items-center gap-2 group"
+              className={cn(
+                "flex items-center gap-2 group border border-zinc-900 rounded p-2 hover:border-violet-600 transition-all cursor-pointer active:scale-95 w-full bg-zinc-900/50",
+                {
+                  "bg-gradient-to-r from-zinc-900 to-zinc-950 glass-shadow":
+                    currentTab === index,
+                },
+              )}
               key={index}
               onClick={() => setCurrentTab(index)}
             >
-              <div
-                className={cn(
-                  "w-20 h-20 border-b border-zinc-800 glass-background rounded-2xl glass-shadow p-2 hover:border-violet-600 transition-all cursor-pointer active:scale-95",
-                  {
-                    "border-violet-600": currentTab === index,
-                  },
-                )}
-              >
-                <Image
-                  src={item.logo}
-                  alt={item.name}
-                  width={10}
-                  height={10}
-                  className="w-full h-full object-contain group-hover:brightness-125"
-                />
-              </div>
-              <p className="group-hover:brightness-150 mt-1">{item.name}</p>
+              <Image
+                src={item.logo}
+                alt={item.name}
+                width={30}
+                height={30}
+                className="object-contain group-hover:brightness-125"
+              />
+              <span className="group-hover:brightness-150">{item.name}</span>
             </div>
           ))}
         </div>
-        <ComparasionCard {...products[currentTab]} />
+        <div className="md:col-span-2 z-[1]">
+          <ComparasionCard {...products[currentTab]} />
+        </div>
       </div>
     </section>
   );

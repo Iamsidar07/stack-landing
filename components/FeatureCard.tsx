@@ -24,7 +24,7 @@ const FeatureCard = ({
         <div className="absolute inset-px rounded-2xl bg-gradient-to-br from-zinc-900 to-zinc-950 z-[-1]" />
         <Icon className="text-zinc-700 text-5xl z-[1]" />
       </div>
-      <h2 className="mt-4 text-xl">{title}</h2>
+      <h2 className="mt-4 text-lg sm:text-xl">{title}</h2>
       <p className="mt-2 text-zinc-500">{description}</p>
       <Link
         href={actionLink}

@@ -9,9 +9,9 @@ interface FooterColProps {
 
 const productLinks = [
   { name: "Home", href: "/" },
-  { name: "Features", href: "#features" },
+  { name: "Features", href: "/#features" },
   { name: "Pricing & Plans", href: "/pricing" },
-  { name: "FAQS", href: "#faq" },
+  { name: "FAQS", href: "/#faq" },
 ];
 
 const companyLinks = [
