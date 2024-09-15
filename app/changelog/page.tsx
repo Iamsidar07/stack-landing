@@ -23,7 +23,7 @@ export default async function Changelog() {
   const content = await fetchChangelog();
 
   return (
-    <section className="px-4 pt-32 md:pt-32 max-w-5xl mx-auto">
+    <section className="px-4 pt-12 md:pt-20 max-w-5xl mx-auto">
       <div className="mx-auto md:w-1/2">
         <h1 className="text-2xl md:text-5xl mt-12 font-semibold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700">
           Stack Changelog

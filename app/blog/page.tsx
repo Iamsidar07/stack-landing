@@ -35,7 +35,7 @@ export default function BlogsPage() {
     ),
   }));
   return (
-    <section className="px-4 pt-32 md:pt-32 max-w-7xl mx-auto">
+    <section className="px-4 pt-12 md:pt-10 max-w-7xl mx-auto">
       <h1 className="text-2xl md:text-5xl mt-12 font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 text-center">
         Blogs & Updates
       </h1>

@@ -25,7 +25,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   if (!post) notFound();
   return (
     <section>
-      <div className="max-w-3xl mx-auto w-full px-4 py-32 ">
+      <div className="max-w-3xl mx-auto w-full px-4 pb-32 pt-12 md:pt-10">
         <h1 className="text-2xl md:text-5xl mt-12 font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700">
           {post.title}
         </h1>

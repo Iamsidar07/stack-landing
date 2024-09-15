@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import CopyToClipboard from "./CopyToClipboard";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
