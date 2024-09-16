@@ -22,13 +22,15 @@ export default function BlogsPage() {
             {post.title}
           </h2>
           <p className="opacity-60 mt-2 text-sm">{post.description}</p>
-          <Image
-            src={post.image}
-            alt={post.title}
-            width={640}
-            height={75}
-            className="rounded-lg glass-shadow border border-t-0 border-zinc-900 mt-6 object-contain aspect-video"
-          />
+          <div className="rounded-lg glass-shadow border border-t-0 border-zinc-900 mt-6 p-px">
+            <Image
+              src={post.image}
+              alt={post.title}
+              width={640}
+              height={75}
+              className="rounded-md object-cover w-full h-full"
+            />
+          </div>
         </Link>
       </div>
     ),
