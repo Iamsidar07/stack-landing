@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function BlogsPage() {
-  console.log(allPosts);
   const data = allPosts.map((post) => ({
     title: new Date(post.published).toLocaleDateString("en-US", {
       year: "numeric",
@@ -28,7 +27,7 @@ export default function BlogsPage() {
             alt={post.title}
             width={640}
             height={75}
-            className="rounded-lg glass-shadow border border-t-0 border-zinc-900 mt-6 object-contain"
+            className="rounded-lg glass-shadow border border-t-0 border-zinc-900 mt-6 object-contain aspect-video"
           />
         </Link>
       </div>

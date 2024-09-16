@@ -6,16 +6,16 @@ export interface FeatureCardProps {
   title: string;
   description: string;
   icon: LucideIcon;
-  actionText: string;
-  actionLink?: string;
+  actionText?: string;
+  actionLink: string;
 }
 
 const FeatureCard = ({
   title,
   description,
   icon: Icon,
-  actionText,
-  actionLink = "Learn More",
+  actionText = "Learn More",
+  actionLink,
 }: FeatureCardProps) => {
   return (
     <div className="relative p-4 sm:p-0 rounded-3xl hover:brightness-150 transition-all group">

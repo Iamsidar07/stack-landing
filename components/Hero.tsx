@@ -3,11 +3,10 @@ import React from "react";
 import Link from "next/link";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import CopyToClipboard from "./CopyToClipboard";
-import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="h-screen w-full relative pt-32 px-4">
+    <div className="h-screen w-full relative pt-32 sm:pt-0 px-4">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -23,9 +22,9 @@ const Hero = () => {
           target="_blank"
           className="inline-flex gap-1 mb-4 text-transparent bg-gradient-to-b from-zinc-300 to-zinc-500 bg-clip-text"
         >
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-1">
             Backed by{" "}
-            <span className="w-7 h-7 grid place-items-center bg-zinc-700 text-zinc-100 rounded-md font-semibold glass-shadow">
+            <span className="w-7 h-7 grid place-items-center bg-zinc-700 text-zinc-100 rounded-md font-semibold glass-shadow ml-2">
               Y
             </span>
             Combinator
@@ -35,27 +34,29 @@ const Hero = () => {
           The open-source <br />
           <span className="bg-black/5">Auth0 alternative.</span>
         </h1>
-        <p className="text-lg mt-4 text-center text-zinc-400">
+        <p className="text-normal sm:text-lg mt-4 text-center text-zinc-400">
           We build your sign in page so you don&apos;t have to.
           <br />
           AuthN, authZ, and user management in just 5 minutes.
         </p>
         <div className="text-center mt-8">
-          <span className="text-sm font-bold text-gray-500">
+          <span className="text-sm font-bold text-zinc-400">
             Next.js setup wizard:
           </span>
-          <div className="mt-4 bg-zinc-900/40 px-0 pl-2 sm:px-8 py-6 w-fit rounded-md mx-auto relative border border-zinc-800 backdrop-blur">
-            <div className="w-24 h-24 bg-violet-500 rounded-lg absolute z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 filter blur-[76px] animate-pulse" />
-            <div className="pt-6 flex gap-2 items-center">
-              <span className="font-mono ">
-                $ npx @stackframe/init-stack@latest
-              </span>
-              <CopyToClipboard text="npx @stackframe/init-stack@latest" />
-            </div>
-            <div className="absolute left-2 top-2 flex items-center gap-2">
-              <div className="w-4 h-4 bg-red-500 rounded-full" />
-              <div className="w-4 h-4 bg-green-500 rounded-full" />
-              <div className="w-4 h-4 bg-yellow-500 rounded-full" />
+          <div className="code_wrapper p-2 rounded-lg backdrop-blur mt-4">
+            <div className="bg-zinc-900/40 px-0 pl-2 sm:px-8 py-6 w-fit rounded-lg mx-auto relative border border-zinc-800 backdrop-blur">
+              <div className="w-24 h-24 bg-violet-500 rounded-lg absolute z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 filter blur-[76px] animate-pulse" />
+              <div className="pt-6 flex gap-2 items-center">
+                <span className="font-mono ">
+                  $ npx @stackframe/init-stack@latest
+                </span>
+                <CopyToClipboard text="npx @stackframe/init-stack@latest" />
+              </div>
+              <div className="absolute left-4 top-4 flex items-center gap-2">
+                <div className="w-4 h-4 bg-red-500 rounded-full" />
+                <div className="w-4 h-4 bg-green-500 rounded-full" />
+                <div className="w-4 h-4 bg-yellow-500 rounded-full" />
+              </div>
             </div>
           </div>
         </div>

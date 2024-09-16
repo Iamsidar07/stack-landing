@@ -142,3 +142,23 @@ pre [data-line] {
 ::-webkit-scrollbar-thumb:hover {
   background: #3f3f46;
 }
+
+.code_wrapper {
+  background: radial-gradient(
+      85.77% 49.97% at 51% 5.12%,
+      hsla(0, 100%, 79%, 0.11) 0,
+      rgba(222, 226, 255, 0.08) 45.83%,
+      rgba(241, 242, 255, 0.02) 100%
+    ),
+    rgba(0, 0, 0, 0.44);
+  border: 1px solid hsla(0, 0%, 100%, 0.08);
+  box-shadow: 0 0 40px 20px hsla(0, 0%, 100%, 0.03),
+    inset 0 0.5px 0 0 hsla(0, 0%, 100%, 0.3);
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    #d9d9d9 60%,
+    hsla(0, 0%, 85%, 0) 90%
+  );
+  mask-image: linear-gradient(180deg, #d9d9d9 60%, hsla(0, 0%, 85%, 0) 90%);
+  /* transform: translate3d(-50%, calc(-50% - 50px), 0); */
+}
