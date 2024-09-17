@@ -183,9 +183,9 @@ const ComparasionWithCompetitors = () => {
               className={cn(
                 "flex items-center gap-2 group border border-zinc-900 rounded p-2 hover:border-violet-600 transition-all cursor-pointer active:scale-95 w-full bg-zinc-900/50",
                 {
-                  "bg-gradient-to-r from-zinc-900 to-zinc-950 glass-shadow":
+                  "bg-gradient-to-r from-zinc-900 to-zinc-950 glass-shadow border border-violet-600":
                     currentTab === index,
-                },
+                }
               )}
               key={index}
               onClick={() => setCurrentTab(index)}

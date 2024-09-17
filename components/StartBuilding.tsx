@@ -5,7 +5,11 @@ import { ArrowRight } from "lucide-react";
 
 const StartBuilding = () => {
   return (
-    <section id="start-building" className="py-20 sm:py-32 text-center w-full">
+    <section
+      id="start-building"
+      className="py-20 sm:py-32 text-center w-full bg-dot-white/[0.2] relative max-w-7xl mx-auto"
+    >
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <GradientBorder>
         The developer-friendly authentication platform
       </GradientBorder>

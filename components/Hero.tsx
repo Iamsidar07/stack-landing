@@ -22,7 +22,9 @@ const Hero = () => {
           target="_blank"
           className="inline-flex gap-1 mb-4 text-transparent bg-gradient-to-b from-zinc-300 to-zinc-500 bg-clip-text"
         >
-          <div className="flex items-center justify-center gap-1">
+          <div
+            className="flex items-center justify-center gap-1"
+          >
             Backed by{" "}
             <span className="w-7 h-7 grid place-items-center bg-zinc-700 text-zinc-100 rounded-md font-semibold glass-shadow ml-2">
               Y
@@ -30,16 +32,22 @@ const Hero = () => {
             Combinator
           </div>
         </Link>
-        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-b from-zinc-300 to-zinc-500 bg-clip-text text-center tracking-tight">
+        <h1
+          className="text-3xl md:text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-b from-zinc-300 to-zinc-500 bg-clip-text text-center tracking-tight"
+        >
           The open-source <br />
           <span className="bg-black/5">Auth0 alternative.</span>
         </h1>
-        <p className="text-normal sm:text-lg mt-4 text-center text-zinc-400">
+        <p
+          className="text-normal sm:text-lg mt-4 text-center text-zinc-400"
+        >
           We build your sign in page so you don&apos;t have to.
           <br />
           AuthN, authZ, and user management in just 5 minutes.
         </p>
-        <div className="text-center mt-8">
+        <div
+          className="text-center mt-8"
+        >
           <span className="text-sm font-bold text-zinc-400">
             Next.js setup wizard:
           </span>
@@ -60,7 +68,9 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-4 mt-8 w-fit mx-auto z-10">
+        <div
+          className="flex items-center gap-2 mt-8 w-fit mx-auto z-10"
+        >
           <div className="relative w-fit mx-auto px-6 py-2 rounded-2xl">
             <Link
               href={"https://docs.stack-auth.com/getting-started/setup"}

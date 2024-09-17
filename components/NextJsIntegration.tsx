@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import * as motion from "framer-motion/client";
 
 const GridItem = ({
   image,
@@ -81,7 +82,11 @@ const NextJsIntegration = () => {
       </p>
 
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 mt-10 md:mt-20 relative px-4 md:px-0">
-        <div className="glass-shadow border border-zinc-900 bg-zinc-950 rounded-xl md:col-span-12 px-6 py-8 overflow-hidden group">
+        <motion.div
+          initial={{ opacity: 0, y: 20}}
+          animate={{opacity: 1, y: 0}}
+          className="glass-shadow border border-zinc-900 bg-zinc-950 rounded-xl md:col-span-12 px-6 py-8 overflow-hidden group"
+        >
           <div>
             <header>
               <h2 className="font-semibold">Next.js Integration</h2>
@@ -103,7 +108,7 @@ const NextJsIntegration = () => {
               />
             </picture>
           </div>
-        </div>
+        </motion.div>
         {items.map((item, index) => (
           <GridItem key={index} {...item} />
         ))}
