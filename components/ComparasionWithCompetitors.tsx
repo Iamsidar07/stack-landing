@@ -173,10 +173,10 @@ text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b fro
       <Link
         href={link}
         target="_blank"
-        className="ml-auto flex items-center gap-2 mt-8 justify-end group w-fittext-violet-500"
+        className="ml-auto flex items-center gap-2 mt-8 justify-end group w-fit text-violet-500"
       >
         Learn more{" "}
-        <ArrowRight className="w-4 h-4 text-violet-600 group-hover:translate-x-1 transition-transform" />
+        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
       </Link>
     </div>
   );
