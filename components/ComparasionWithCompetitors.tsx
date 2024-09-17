@@ -123,6 +123,26 @@ const products = [
     ],
     link: "https://docs.stack-auth.com/getting-started/setup?competitor=supertokens",
   },
+  {
+    name: "Anyone else",
+    logo: "/anything.svg",
+    description: "",
+    content: [
+      {
+        subheding: "Are they open-source?",
+        desc: "Stack is 100% open-source and self-hostable, under OSI-approved licenses.",
+      },
+      {
+        subheding: "Are they developer-friendly?",
+        desc: "Stack is built for developers, not enterprises. It's simple to understand, use, and integrate into your Next.js + Postgres tech stack.",
+      },
+      {
+        subheding: "Do they do more than just authN?",
+        desc: "Instead of just logging you in, Stack also provides authZ (orgs/teams, permissions), impersonation, emails, user management, and more.",
+      },
+    ],
+    link: "https://docs.stack-auth.com/getting-started/setup?competitor=anyone-else",
+  },
 ];
 
 const ComparasionCard = ({
