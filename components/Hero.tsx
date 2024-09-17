@@ -6,7 +6,7 @@ import CopyToClipboard from "./CopyToClipboard";
 
 const Hero = () => {
   return (
-    <div className="h-screen w-full relative pt-32 sm:pt-0 px-4">
+    <div className="h-screen w-full relative px-4">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -20,11 +20,11 @@ const Hero = () => {
         <Link
           href={"https://www.ycombinator.com/companies/stack-auth"}
           target="_blank"
-          className="inline-flex gap-1 mb-4 bg-gradient-to-b from-zinc-300 to-zinc-500 bg-clip-text gradient-text-support"
+          className="inline-flex gap-1 mb-4 text-zinc-500"
         >
           <div className="flex items-center justify-center gap-1">
             Backed by{" "}
-            <span className="w-7 h-7 grid place-items-center bg-zinc-700 text-zinc-100 rounded-md font-semibold glass-shadow ml-2">
+            <span className="w-7 h-7 grid place-items-center bg-zinc-700 !text-zinc-100 rounded-md font-semibold glass-shadow ml-2">
               Y
             </span>
             Combinator
@@ -47,15 +47,15 @@ const Hero = () => {
             <div className="bg-zinc-900/40 px-0 pl-2 sm:px-8 py-6 w-fit rounded-lg mx-auto relative border border-zinc-800 backdrop-blur">
               <div className="w-24 h-24 bg-violet-500 rounded-lg absolute z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 filter blur-[76px] animate-pulse" />
               <div className="pt-6 flex gap-2 items-center">
-                <span className="font-mono ">
+                <span>
                   $ npx @stackframe/init-stack@latest
                 </span>
                 <CopyToClipboard text="npx @stackframe/init-stack@latest" />
               </div>
               <div className="absolute left-4 top-4 flex items-center gap-2">
-                <div className="w-4 h-4 bg-red-500 rounded-full" />
-                <div className="w-4 h-4 bg-green-500 rounded-full" />
-                <div className="w-4 h-4 bg-yellow-500 rounded-full" />
+                <div className="w-3 sm:w-4 h-3 sm:h-4 bg-red-500 rounded-full" />
+                <div className="w-3 sm:w-4 h-3 sm:h-4 bg-green-500 rounded-full" />
+                <div className="w-3 sm:w-4 h-3 sm:h-4 bg-yellow-500 rounded-full" />
               </div>
             </div>
           </div>

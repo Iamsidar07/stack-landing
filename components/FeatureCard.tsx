@@ -31,7 +31,7 @@ const FeatureCard = ({
         className="flex items-center justify-end md:opacity-0 md:group-hover:opacity-100 transition-opacity mt-4"
       >
         {actionText}{" "}
-        <ArrowRight className="delay-150 group-hover:translate-x-1 transition-transform" />
+        <ArrowRight className="delay-150 w-5 h-5 group-hover:translate-x-1 transition-transform" />
       </Link>
     </div>
   );

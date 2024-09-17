@@ -58,21 +58,21 @@ const PricingTable = () => {
         </div>
       </div>
       <div className="py-2 text-slate-50 font-medium mt-4">Usage</div>
-      <div className="px-6 flex flex-col justify-end">
+      <div className="px-6 md:flex hidden flex-col justify-end">
         <div className="flex items-center h-full py-2 text-slate-50 font-medium">
           <span>
             <span className="md:hidden">Usage</span>
           </span>
         </div>
       </div>
-      <div className="px-6 flex flex-col justify-end">
+      <div className="px-6 md:flex hidden flex-col justify-end">
         <div className="flex items-center h-full py-2 text-slate-50 font-medium">
           <span>
             <span className="md:hidden">Usage</span>
           </span>
         </div>
       </div>
-      <div className="px-6 flex flex-col justify-end">
+      <div className="px-6 md:flex hidden flex-col justify-end">
         <div className="flex items-center h-full py-2 text-slate-50 font-medium">
           <span>
             <span className="md:hidden">Usage</span>
@@ -198,21 +198,21 @@ const PricingTable = () => {
         </div>
       </div>
       <div className="py-2 text-slate-50 font-medium mt-4">Features</div>
-      <div className="px-6 flex flex-col justify-end">
+      <div className="px-6 md:flex flex-col justify-end hidden">
         <div className="flex items-center h-full py-2 text-slate-50 font-medium">
           <span>
             <span className="md:hidden">Features</span>
           </span>
         </div>
       </div>
-      <div className="px-6 flex flex-col justify-end">
+      <div className="px-6 md:flex flex-col justify-end hidden">
         <div className="flex items-center h-full py-2 text-slate-50 font-medium">
           <span>
             <span className="md:hidden">Features</span>
           </span>
         </div>
       </div>
-      <div className="px-6 flex flex-col justify-end">
+      <div className="px-6 md:flex flex-col justify-end hidden">
         <div className="flex items-center h-full py-2 text-slate-50 font-medium">
           <span>
             <span className="md:hidden">Features</span>
@@ -316,21 +316,21 @@ const PricingTable = () => {
         </div>
       </div>
       <div className="py-2 text-slate-50 font-medium mt-4">Support</div>
-      <div className="px-6 flex flex-col justify-end">
+      <div className="px-6 md:flex hidden flex-col justify-end">
         <div className="flex items-center h-full py-2 text-slate-50 font-medium">
           <span>
             <span className="md:hidden">Support</span>
           </span>
         </div>
       </div>
-      <div className="px-6 flex flex-col justify-end">
+      <div className="px-6 md:flex hidden flex-col justify-end">
         <div className="flex items-center h-full py-2 text-slate-50 font-medium">
           <span>
             <span className="md:hidden">Support</span>
           </span>
         </div>
       </div>
-      <div className="px-6 flex flex-col justify-end">
+      <div className="px-6 md:flex hidden flex-col justify-end">
         <div className="flex items-center h-full py-2 text-slate-50 font-medium">
           <span>
             <span className="md:hidden">Support</span>

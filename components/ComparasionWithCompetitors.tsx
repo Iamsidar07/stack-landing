@@ -159,7 +159,7 @@ const ComparasionCard = ({
       ></div>
       <h2
         className="
-text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support"
+text-lg md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support"
       >
         Stack vs {name}
       </h2>
@@ -185,15 +185,15 @@ text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b fro
 const ComparasionWithCompetitors = () => {
   const [currentTab, setCurrentTab] = useState(0);
   return (
-    <section className="px-6 md:px-0 py-12 md:py-24 w-full bg-black relative bg-dot-white/[0.2]">
+    <section className="px-6 md:px-0 py-12 md:py-24 mt-12 w-full bg-black relative bg-dot-white/[0.2]">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      <h2 className="text-center text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support">
+      <h2 className="text-center text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-500 gradient-text-support">
         Here&apos;s how we compare
       </h2>
 
-      <p className="opacity-60 mt-2 text-lg text-center">
+      <p className="opacity-60 mt-2 md:text-lg text-center">
         Among its competitors, Stack Auth is unique by being open-source,
-        <br />
+        <br className="hidden md:block" />
         developer-friendly, and feature-rich.
       </p>
       <div className="mt-10 md:mt-20 max-w-4xl mx-auto gap-8 min-h-[45vh] grid grid-cols-1 md:grid-cols-3">

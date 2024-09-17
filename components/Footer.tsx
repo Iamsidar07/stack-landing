@@ -127,7 +127,7 @@ const Footer = () => {
         </div>
         <FooterCol title="Products" items={productLinks} />
         <FooterCol title="Company" items={companyLinks} />
-        <FooterCol title="Legas" items={legalLinks} />
+        <FooterCol title="Legals" items={legalLinks} />
       </div>
     </footer>
   );

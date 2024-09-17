@@ -36,8 +36,8 @@ const GettingStarted = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 max-w-7xl mx-auto pt-12 sm:pt-24">
         {qna.map(({ q, ans }) => (
           <div key={q} className="text-left">
-            <h3 className="font-bold text-white/80">{q}</h3>
-            <p className="mt-2 text-gray-500 leading-relaxed">{ans}</p>
+            <h3 className="font-bold text-white/80 text-normal sm:text-lg">{q}</h3>
+            <p className="mt-2 text-gray-500 leading-relaxed text-sm">{ans}</p>
           </div>
         ))}
       </div>

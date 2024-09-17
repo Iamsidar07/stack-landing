@@ -77,7 +77,7 @@ const NextJsIntegration = () => {
       </h2>
 
       <p className="opacity-60 mt-2 text-lg text-center">
-        We pride ourselves with our lean and responsive design. <br /> Your
+        We pride ourselves with our lean and responsive design. <br className="hidden md:inline-flex" /> Your
         users will love it, and your developers too.
       </p>
 
