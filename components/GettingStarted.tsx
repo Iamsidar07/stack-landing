@@ -30,7 +30,7 @@ const GettingStarted = () => {
   return (
     <section id="faq" className="px-4 py-12 md:py-24 text-center w-full">
       <GradientBorder>Getting started with Stack</GradientBorder>
-      <h2 className="mt-4 sm:mt-8 text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700">
+      <h2 className="mt-4 sm:mt-8 text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support">
         Everything you need to know
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 max-w-7xl mx-auto pt-12 sm:pt-24">

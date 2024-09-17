@@ -159,7 +159,7 @@ const ComparasionCard = ({
       ></div>
       <h2
         className="
-text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700"
+text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support"
       >
         Stack vs {name}
       </h2>
@@ -173,7 +173,7 @@ text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b fro
       <Link
         href={link}
         target="_blank"
-        className="ml-auto flex items-center gap-2 mt-8 justify-end group w-fit"
+        className="ml-auto flex items-center gap-2 mt-8 justify-end group w-fittext-violet-500"
       >
         Learn more{" "}
         <ArrowRight className="w-4 h-4 text-violet-600 group-hover:translate-x-1 transition-transform" />
@@ -187,7 +187,7 @@ const ComparasionWithCompetitors = () => {
   return (
     <section className="px-6 md:px-0 py-12 md:py-24 w-full bg-black relative bg-dot-white/[0.2]">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      <h2 className="text-center text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700">
+      <h2 className="text-center text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support">
         Here&apos;s how we compare
       </h2>
 
@@ -205,7 +205,7 @@ const ComparasionWithCompetitors = () => {
                 {
                   "bg-gradient-to-r from-zinc-900 to-zinc-950 glass-shadow border border-violet-600":
                     currentTab === index,
-                }
+                },
               )}
               key={index}
               onClick={() => setCurrentTab(index)}

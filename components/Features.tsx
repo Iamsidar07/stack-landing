@@ -101,7 +101,7 @@ const Features = () => {
         className="-top-1 left-1/2 h-[100px] w-[70%] md:h-[300px] center pointer-events-none absolute max-w-full -translate-x-1/2 -translate-y-1/2 conic-bg"
       ></div>
 
-      <h2 className="text-2xl text-center md:text-left md:text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 mb-12">
+      <h2 className="text-2xl text-center md:text-left md:text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 mb-12 gradient-text-support">
         Secure access, <br /> Seamless integration.
       </h2>
       <FeatureRow features={AUTHENTICATION} />

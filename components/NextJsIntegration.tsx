@@ -14,8 +14,8 @@ const GridItem = ({
   <div className="border border-zinc-900 bg-zinc-950 glass-shadow rounded-xl col-span-full md:col-span-6 px-6 py-8 overflow-hidden group flex flex-col">
     <div>
       <header>
-        <h2 className="font-semibold">{title}</h2>
-        <p className="opacity-60 mt-2">{description}</p>
+        <h2 className="font-semibold text-lg">{title}</h2>
+        <p className="opacity-60 mt-2 text-sm">{description}</p>
       </header>
     </div>
     <div className="w-[calc(100%+64px)] flex items-end justify-center -m-8 mt-auto">
@@ -72,7 +72,7 @@ const NextJsIntegration = () => {
         className="-top-1 left-1/2 h-[100px] w-[70%] md:h-[300px] center pointer-events-none absolute max-w-full -translate-x-1/2 -translate-y-1/2 conic-bg"
       />
 
-      <h2 className="text-center text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700">
+      <h2 className="text-center text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support">
         Beautiful Next.js integration
       </h2>
 
@@ -83,14 +83,14 @@ const NextJsIntegration = () => {
 
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 mt-10 md:mt-20 relative px-4 md:px-0">
         <motion.div
-          initial={{ opacity: 0, y: 20}}
-          animate={{opacity: 1, y: 0}}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           className="glass-shadow border border-zinc-900 bg-zinc-950 rounded-xl md:col-span-12 px-6 py-8 overflow-hidden group"
         >
           <div>
             <header>
-              <h2 className="font-semibold">Next.js Integration</h2>
-              <p className="opacity-60 mt-2">
+              <h2 className="font-semibold text-lg">Next.js Integration</h2>
+              <p className="opacity-60 mt-2 text-sm">
                 Easily integrate your Next.js application with our components
                 and features.
               </p>

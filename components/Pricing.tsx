@@ -27,7 +27,7 @@ const Pricing = ({
       <span className="px-6 py-2 rounded-full text-sm text-zinc-500 glass-shadow">
         Managed hosting
       </span>
-      <h2 className="mt-4 sm:mt-8 text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700">
+      <h2 className="mt-4 sm:mt-8 text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support">
         Simple plan for everyone
       </h2>
       <p className="opacity-60 mt-2 text-lg">Self-hosting is always free.</p>
@@ -36,7 +36,7 @@ const Pricing = ({
           <span className="font-bold text-lg">Stack</span>
           <p className="text-zinc-500 text-lg font-semibold">For Individuals</p>
           <div className="flex items-center gap-2 py-6">
-            <span className="text-4xl sm:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-300 to-zinc-600">
+            <span className="text-4xl sm:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-300 to-zinc-600 gradient-text-support">
               $0
             </span>
             <span className="text-zinc-500 text-sm font-semibold">/ month</span>
@@ -77,7 +77,7 @@ const Pricing = ({
             For early startups and small teams
           </p>
           <div className="flex items-center gap-2 py-6">
-            <span className="text-4xl sm:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-300 to-zinc-600">
+            <span className="text-4xl sm:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-300 to-zinc-600 gradient-text-support">
               $49
             </span>
             <span className="text-zinc-500 text-sm font-semibold">/ month</span>
@@ -118,7 +118,7 @@ const Pricing = ({
             For growing businesses and teams
           </p>
           <div className="flex items-center gap-2 py-6">
-            <span className="text-4xl sm:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-300 to-zinc-600">
+            <span className="text-4xl sm:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-300 to-zinc-600 gradient-text-support">
               $299
             </span>
             <span className="text-zinc-500 text-sm font-semibold">/ month</span>

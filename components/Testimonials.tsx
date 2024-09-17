@@ -18,7 +18,7 @@ const Testimonials = () => {
       id="testimonials"
       className="text-center px-4 py-12 md:py-24 w-full"
     >
-      <h2 className="text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700">
+      <h2 className="text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support">
         Join the community
       </h2>
       <p className="opacity-60 mt-6 text-lg">

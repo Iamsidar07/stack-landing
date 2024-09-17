@@ -13,7 +13,7 @@ const StartBuilding = () => {
       <GradientBorder>
         The developer-friendly authentication platform
       </GradientBorder>
-      <h2 className="mt-4 sm:mt-8 text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700">
+      <h2 className="mt-4 sm:mt-8 text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support">
         Start building with Stack today
       </h2>
       <p className="mt-4 text-lg text-zinc-500">

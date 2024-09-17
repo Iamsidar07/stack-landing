@@ -6,7 +6,7 @@ import rehypeHighlight from "rehype-highlight";
 async function fetchChangelog() {
   try {
     const res = await fetch(
-      "https://raw.githubusercontent.com/commercialhaskell/stack/master/ChangeLog.md"
+      "https://raw.githubusercontent.com/commercialhaskell/stack/master/ChangeLog.md",
     );
     return await res.text();
   } catch (e) {
@@ -25,7 +25,7 @@ export default async function Changelog() {
   return (
     <section className="px-4 pt-12 md:pt-20 max-w-5xl mx-auto">
       <div className="mx-auto md:w-1/2">
-        <h1 className="text-2xl md:text-5xl mt-12 font-semibold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700">
+        <h1 className="text-2xl md:text-5xl mt-12 font-semibold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support">
           Stack Changelog
         </h1>
         <p className="opacity-60 mt-2 text-lg">
