@@ -10,7 +10,7 @@ const Pricing = ({
   return (
     <section
       id="pricing"
-      className="px-4 md:py-24 text-center w-full relative"
+      className="px-4 text-center w-full relative"
     >
       {withTopGradientBorder && (
         <>

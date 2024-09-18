@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 interface ProductProps {
   name: string;
@@ -152,11 +153,14 @@ const ComparasionCard = ({
   link,
 }: ProductProps) => {
   return (
-    <div className="p-4 md:p-8 border-b border-zinc-700 rounded-xl glass-shadow leading-loose glass-shadow relative bg-zinc-900/80">
+    <motion.div
+    initial={{opacity: 0, y: 50}}
+    animate={{opacity: 1, y: 0}}
+    className="p-4 md:p-8 border-b border-zinc-700 rounded-xl glass-shadow leading-loose glass-shadow relative bg-zinc-900/80">
       <div
         aria-hidden="true"
         className="line-bg right-0 top-0 w-[20%] center pointer-events-none absolute h-px max-w-full -translate-x-1/2 -translate-y-1/2"
-      ></div>
+      />
       <h2
         className="
 text-lg md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support"
@@ -178,7 +182,7 @@ text-lg md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b fro
         Learn more{" "}
         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
@@ -205,7 +209,7 @@ const ComparasionWithCompetitors = () => {
                 {
                   "bg-gradient-to-r from-zinc-900 to-zinc-950 glass-shadow border border-violet-600":
                     currentTab === index,
-                },
+                }
               )}
               key={index}
               onClick={() => setCurrentTab(index)}

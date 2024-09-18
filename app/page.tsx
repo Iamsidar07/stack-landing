@@ -8,7 +8,7 @@ import NextJsIntegration from "@/components/NextJsIntegration";
 import ComparasionWithCompetitors from "@/components/ComparasionWithCompetitors";
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center  min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <Hero />
       <Features />
       <NextJsIntegration />
