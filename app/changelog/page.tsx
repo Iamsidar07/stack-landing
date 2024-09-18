@@ -25,7 +25,7 @@ export default async function Changelog() {
   return (
     <section className="px-4 pt-12 md:pt-20 max-w-5xl mx-auto">
       <div className="mx-auto md:w-1/2">
-        <h1 className="text-2xl md:text-5xl mt-12 font-semibold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support">
+        <h1 className="text-3xl md:text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-b from-zinc-400 to-zinc-700 gradient-text-support">
           Stack Changelog
         </h1>
         <p className="opacity-60 mt-2 text-lg">
@@ -34,7 +34,7 @@ export default async function Changelog() {
       </div>
       <div className="border-b border-zinc-800 mt-12" />
       {content && (
-        <div className="prose-sm md:prose-lg text-zinc-100 prose-headings:text-zinc-300 prose-p:text-zinc-100 prose-strong:text-zinc-400 prose-headings:font-medium prose-code:bg-zinc-700/40 prose-code:px-3 prose-code:py-1 prose-code:text-zinc-300 prose-a:text-violet-500 pt-12 px-4 md:px-0 mx-auto w-full max-w-sm md:max-w-4xl overflow-x-hidden">
+        <div className="prose-sm md:prose-lg text-zinc-100 prose-headings:text-zinc-300 prose-p:text-zinc-100 prose-strong:text-zinc-400 prose-headings:font-medium prose-code:bg-zinc-700/40 prose-code:px-3 prose-code:py-1 prose-code:text-zinc-300 prose-a:text-violet-500 pt-12 px-4 md:px-0 mx-auto w-full md:max-w-4xl overflow-x-hidden">
           <Markdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeHighlight]}

@@ -6,7 +6,7 @@ import CopyToClipboard from "./CopyToClipboard";
 
 const Hero = () => {
   return (
-    <div className="h-screen w-full relative px-4">
+    <div className="h-[calc(100vh_-_76px)] w-full relative px-4">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -46,8 +46,8 @@ const Hero = () => {
           <div className="code_wrapper p-2 rounded-lg backdrop-blur mt-4">
             <div className="bg-zinc-900/40 px-0 pl-2 sm:px-8 py-6 w-fit rounded-lg mx-auto relative border border-zinc-800 backdrop-blur">
               <div className="w-24 h-24 bg-violet-500 rounded-lg absolute z-[-1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 filter blur-[76px] animate-pulse" />
-              <div className="pt-6 flex gap-2 items-center">
-                <span>
+              <div className="pt-6 flex gap-2 items-center font-mono">
+                <span className="text-sm">
                   $ npx @stackframe/init-stack@latest
                 </span>
                 <CopyToClipboard text="npx @stackframe/init-stack@latest" />

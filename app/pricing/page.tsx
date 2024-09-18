@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default async function PricingPage() {
   return (
-    <section className="px-4 pt-32 md:pt-32 max-w-7xl mx-auto flex flex-col gap-24">
+    <section className="px-4 pt-12 md:pt-32 max-w-7xl mx-auto flex flex-col gap-24">
       <Pricing withTopGradientBorder={false} />
       <PricingTable />
     </section>
