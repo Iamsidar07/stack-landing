@@ -34,7 +34,7 @@ export default async function Changelog() {
       </div>
       <div className="border-b border-zinc-800 mt-12" />
       {content && (
-        <div className="prose-sm md:prose-lg text-zinc-100 prose-headings:text-zinc-300 prose-p:text-zinc-100 prose-strong:text-zinc-400 prose-headings:font-medium prose-code:bg-zinc-700/40 prose-code:px-3 prose-code:py-1 prose-code:rounded-md prose-code:text-zinc-300 prose-a:text-violet-500 pt-12 px-4 md:px-0 mx-auto w-full md:max-w-4xl overflow-x-hidden">
+        <div className="prose-sm md:prose-lg text-zinc-100 prose-headings:text-zinc-300 prose-p:text-zinc-100 prose-strong:text-zinc-400 prose-headings:font-medium prose-code:bg-zinc-700/40 prose-code:px-3 prose-code:py-1 prose-code:rounded-md prose-code:glass-shadow prose-code:text-zinc-300 prose-a:text-violet-500 pt-12 px-4 md:px-0 mx-auto w-full md:max-w-4xl overflow-x-hidden">
           <Markdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeHighlight]}
