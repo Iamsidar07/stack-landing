@@ -6,7 +6,7 @@ import { Sora } from "next/font/google";
 
 const sora = Sora({
   subsets: ["latin"],
-  weight: ["400", "300", "500", "600",],
+  weight: ["400", "300", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -25,6 +25,19 @@ export const metadata: Metadata = {
         height: 1086,
       },
     ],
+  },
+  twitter: {
+    title: "Stack Auth — the open-source Auth0 &amp; Clerk alternativ",
+    description: "Stack Auth is the open-source Auth0 alternative",
+    card: "summary_large_image",
+    images: [
+      {
+        url: "https://stack-auth.com/images/login.png",
+        width: 848,
+        height: 1086,
+      },
+    ],
+    site: "https://stack-auth.com",
   },
 };
 
