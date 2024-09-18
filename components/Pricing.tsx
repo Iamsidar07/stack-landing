@@ -1,16 +1,19 @@
+import { cn } from "@/lib/utils";
 import { ArrowRight, CircleCheck } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
 const Pricing = ({
   withTopGradientBorder = true,
+  className,
 }: {
   withTopGradientBorder?: boolean;
+  className?: string;
 }) => {
   return (
     <section
       id="pricing"
-      className="px-4 text-center w-full relative"
+      className={cn("px-4 text-center w-full relative", className)}
     >
       {withTopGradientBorder && (
         <>

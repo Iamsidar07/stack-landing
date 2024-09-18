@@ -14,7 +14,7 @@ export default function Home() {
       <NextJsIntegration />
       <ComparasionWithCompetitors />
       <Testimonials />
-      <Pricing />
+      <Pricing className="py-8 md:py-12" />
       <GettingStarted />
       <StartBuilding />
     </div>
